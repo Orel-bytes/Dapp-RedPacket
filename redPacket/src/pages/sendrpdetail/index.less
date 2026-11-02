@@ -1,0 +1,109 @@
+.send_detail_header {
+  background:linear-gradient(135deg,#436AFF 0%,#3C93FF 100%);
+
+  .rpsender_info {
+    color: #fff;
+    font-size: 12px;
+    top: 5px;
+    left: 5%;
+    position: absolute;
+    font-family: HelveticaNeue;
+
+    .location_icon {
+      width: 8px;
+      margin-right: 3px;
+      margin-top: -2px;
+    }
+  }
+
+  .headerOne {
+    height: 19vh;
+    padding: 5% 7% 0 5%;
+    display: flex;
+    justify-content: center;
+
+    .img_icon {
+      width: 30px;
+      align-self: center;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 50%;
+    }
+    .value {
+      align-self: center;
+      font-size: 27px;
+      color:rgba(255,255,255,1);
+    }
+    .info {
+      align-self: center;
+      display: inline-block;
+      margin: -3px 0 0 5px;
+
+      .type {
+        width: 14px;
+        height: 14px;
+        font-size: 11px;
+        line-height: 15px;
+        margin-right: 5px;
+        color:#5335C7;
+        display: inline-block;
+        font-family: NotoSansHans-Regular,NotoSansHans;
+        background: #fff;
+        box-shadow: 0px 4px 5px 0px rgba(255,51,81,0.1);
+        border-radius: 2px;
+        text-align: center;
+      }
+
+      .unit {
+        font-size: 12px;
+        color: #fff;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .getSumm {
+    margin: 3px 0 0 12px;
+    font-size: 12px;
+    color: #fff;
+    min-height: 25px;
+    line-height: 25px;
+  }
+}
+
+.content {
+  .copy {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.divider {
+  height: 10px;
+  background-color: rgba(244,247,249,1);;
+}
+
+:global {
+  .send_detail {
+    .ant-divider-horizontal {
+      margin: 0;
+    }
+    .send_content {
+      .am-list-item {
+        min-height: 50px;
+        padding: 0 3%;
+      }
+      .am-list-item .am-list-line .am-list-content {
+        font-size: 14px;
+        color:rgba(64,74,91,1);
+        font-family: NotoSansHans-Regular,NotoSansHans;
+      }
+      .am-list-item .am-list-line .am-list-extra {
+        flex-basis: 60%;
+        font-size: 14px;
+        color:rgba(64,74,91,1);
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Red Packet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+  <script>
+    function getExplorer() {
+      var explorer = window.navigator.userAgent;
+      var ie11 = ("ActiveXObject" in window);
+      function compare(s) {
+        return (explorer.indexOf(s) >= 0);
+      }
+      if (ie11 || compare("MSIE") || compare("Edge")) {
+        return 'ie';
+      } else if (compare("Firefox")) {
+        return 'Firefox';
+      } else if (compare("Chrome")) {
+        return 'Chrome';
+      } else if (compare("Opera")) {
+        return 'Opera';
+      } else if (compare("Safari")) {
+        return 'Safari';
+      } else {
+        return 'Unknown';
+      }
+    }
+
+    if (getExplorer() === 'ie') {
+      alert('To ensure your asset security, Chrome, Firefox or Safari is recommended.');
+    }
+  </script>
+
+</head>
+
+<body>
+
+<script>
+  try {
+
+    function injectTagOfJSToBody(){
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.src = "./umi.js";
+      document.body.appendChild(s);
+    };
+    function ensureJsInjected(){
+      let local = window.wanExt.getLocale();
+      window.localStorage.setItem('umi_locale', local);
+
+      if(local === 'zh-CN') {
+        document.title = "红包";
+      }
+
+      injectTagOfJSToBody();
+    };
+    function idleWait(time){
+      if(!window.injectWeb3 || !window.wanExt || !window.wanExt.getLocale){
+        setTimeout(function(){
+          idleWait(time);
+        },time)
+      }else{
+        ensureJsInjected();
+      }
+    }
+    idleWait(100);
+  }catch (e) {
+    console.log("ensureJsInjected() error: ", e);
+  }
+
+</script>
+
+  <div id="root"></div>
+
+</body>
+
+</html>
