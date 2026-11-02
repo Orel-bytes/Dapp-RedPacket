@@ -1,0 +1,57 @@
+{
+  "current_net": "testnet",
+  "mainnet": {
+    "web_port": 3060,
+    "mongdb_url": "mongodb://localhost:27017/redPacket_mainnet",
+    "connector": {
+      "type": "iwan",
+      "option": {
+        "apiKey": "47f0102e75a41dccd836c849b0d16291e33522358ab8ba146cb17709161614b1",
+        "secretKey": "b803eed271c927719a72e9e729bb016c8de2770896abbc84278549a2385c0572",
+        "option": {
+          "url": "api.wanchain.org",
+          "port": 8443,
+          "flag": "ws",
+          "version": "v3"
+        }
+      }
+    },
+    "accounts": [
+      "0xe750a455eb3c814641a377f66dff75f1f7379220",
+      "0x5f20c2f2a095aec7af5aaba4e69b2fd401a1259a"
+    ],
+    "rp_create_table": "redpacketcreateloggers",
+    "rp_claim_table": "redpacketclaimloggers",
+    "rp_claim_reference_table": "redpacketreferencebonusloggers",
+    "rp_user_claim_table": "rp_claim_tables",
+    "rp_fill_nonce_gap_tx_tables": "rp_fill_nonce_gap_tx_tables",
+    "rp_claim_history_tables": "rp_claim_history_tables"
+  },
+  "testnet": {
+    "web_port": 3060,
+    "mongdb_url": "mongodb://localhost:27017/redPacket_gsy",
+    "connector": {
+      "type": "iwan",
+      "option": {
+        "apiKey": "47f0102e75a41dccd836c849b0d16291e33522358ab8ba146cb17709161614b1",
+        "secretKey": "b803eed271c927719a72e9e729bb016c8de2770896abbc84278549a2385c0572",
+        "option": {
+          "url": "apitest.wanchain.org",
+          "port": 8443,
+          "flag": "ws",
+          "version": "v3"
+        }
+      }
+    },
+    "accounts": [
+      "0xb25f3aD042e84928046ABDE93d51d554670a33E3",
+      "0xf368CA0Ff41cAA0F71Deac40C05ca05E017D1702"
+    ],
+    "rp_create_table": "redpacketcreateloggers",
+    "rp_claim_table": "redpacketclaimloggers",
+    "rp_claim_reference_table": "redpacketreferencebonusloggers",
+    "rp_user_claim_table": "rp_claim_tables",
+    "rp_fill_nonce_gap_tx_tables": "rp_fill_nonce_gap_tx_tables",
+    "rp_claim_history_tables": "rp_claim_history_tables"
+  }
+}

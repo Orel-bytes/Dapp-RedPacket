@@ -1,0 +1,24 @@
+{
+  "name": "rp_api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "description": "rp_api",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "cors": "^2.8.5",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta6",
+    "serve-favicon": "^2.3.0",
+    "iwan-sdk": "git://github.com/wanchain/iwan-js-sdk.git#eos-cross"
+  }
+}
