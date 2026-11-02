@@ -1,0 +1,26 @@
+{
+  "serviceType": "OnlineServiceInterface",
+  "serviceName": "OnlineServiceWan",
+  "config": {
+    "connector": {
+      "type": "iwan",
+      "option": {
+        "apiKey": "47f0102e75a41dccd836c849b0d16291e33522358ab8ba146cb17709161614b1",
+        "secretKey": "b803eed271c927719a72e9e729bb016c8de2770896abbc84278549a2385c0572",
+        "option": {
+          "url": "api.wanchain.org",
+          "port": 8443,
+          "flag": "ws",
+          "version": "v3"
+        }
+      }
+    },
+    "lxx_apiKey2": "91a8670f630b36ef4585655979d0bde25370155b0a5cef7d62a5b371f6b6d993",
+    "lxx_secretKey2": "1a891a522f250d1f1bd4fa5467f973537487db40c86b06f07d1f23f27a1b9076",
+    "TestDapp_apiKey": "c096482a6a5ff7bb6e6666d713dbf0c75f9bb2982ae83a41ef92dce3c92367e6",
+    "TestDapp_secretKey": "844de57be7e048e248b70f81795f4445401752262d505ddf2d9641b8af33ecdb"
+  }
+}
+
+
+
