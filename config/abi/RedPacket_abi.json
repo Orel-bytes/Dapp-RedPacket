@@ -1,0 +1,809 @@
+[
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_PRECISE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_TYPE_DEFAULT",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_GASFEE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "mapRPRecord",
+      "outputs": [
+        {
+          "name": "rpSender",
+          "type": "address"
+        },
+        {
+          "name": "rpStartTime",
+          "type": "uint256"
+        },
+        {
+          "name": "rpTokenAddr",
+          "type": "address"
+        },
+        {
+          "name": "rpType",
+          "type": "uint256"
+        },
+        {
+          "name": "rpCounts",
+          "type": "uint256"
+        },
+        {
+          "name": "rpMode",
+          "type": "uint256"
+        },
+        {
+          "name": "rpBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpMinBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpRefBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpAllowance",
+          "type": "uint256"
+        },
+        {
+          "name": "rpGasFee",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "mapRpServiceAccount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "mapWRCToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_MODE_AVERAGE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "acceptOwnership",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_MODE_RANDOM",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_BONUS_MINVALUE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_ASSETTYPE_WAN",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "changeOwner",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_VALID_PERIOD",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "halted",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_RANDOM_DIGITS",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "mapRPCodeActiveTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "newOwner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "mapRPStatusInfo",
+      "outputs": [
+        {
+          "name": "rpRestCounts",
+          "type": "uint256"
+        },
+        {
+          "name": "rpRestBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpRestRefBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpRestAllowance",
+          "type": "uint256"
+        },
+        {
+          "name": "rpFinished",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "halt",
+          "type": "bool"
+        }
+      ],
+      "name": "setHalt",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "mapRPClaimRecord",
+      "outputs": [
+        {
+          "name": "rpBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "rpTokenAddr",
+          "type": "address"
+        },
+        {
+          "name": "rpRefCode",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "mapMaxBonusConfig",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "RP_TYPE_REFERENCE",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "_rpSender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpBonus",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpRefBonus",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpType",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpTokenType",
+          "type": "address"
+        }
+      ],
+      "name": "RedPacketCreateLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "_rpStartTime",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "_rpClaimerAddr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpBonus",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpRefCode",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpRestCounts",
+          "type": "uint256"
+        }
+      ],
+      "name": "RedPacketClaimLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "_rpStartTime",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "_rpClaimerAddr",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpRefCode",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_refBonus",
+          "type": "uint256"
+        }
+      ],
+      "name": "RedPacketReferenceBonusLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "_rpStartTime",
+          "type": "uint256"
+        },
+        {
+          "indexed": true,
+          "name": "_rpSender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpBonus",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpRefBonus",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_rpGasFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "RedPacketRevokeLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_tokenAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_tokenSymbol",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "name": "_tokenDecimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "RegWRCTokenLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_rpGasFee",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_configTs",
+          "type": "uint256"
+        }
+      ],
+      "name": "RpGasFeeLogger",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_tokenAddress",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_rpMaxBonus",
+          "type": "uint256"
+        }
+      ],
+      "name": "RpMaxBonusConfigLogger",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_wrcAddr",
+          "type": "address"
+        },
+        {
+          "name": "_rpMaxBonus",
+          "type": "uint256"
+        }
+      ],
+      "name": "RegWRCToken",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_rpGasFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetRPGasFee",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_wrcAddr",
+          "type": "address"
+        },
+        {
+          "name": "_rpMaxBonus",
+          "type": "uint256"
+        }
+      ],
+      "name": "SetWrcMaxRpBonus",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_wrcAddr",
+          "type": "address"
+        }
+      ],
+      "name": "GetWrcMaxRpBonus",
+      "outputs": [
+        {
+          "name": "rpMaxBonus",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_accounts",
+          "type": "address"
+        },
+        {
+          "name": "_enable",
+          "type": "bool"
+        }
+      ],
+      "name": "RegistRpServiceAccounts",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "name": "_rpType",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpMode",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpCounts",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpRefBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpMinBonus",
+          "type": "uint256"
+        },
+        {
+          "name": "_rpTokenAddr",
+          "type": "address"
+        }
+      ],
+      "name": "CreateRP",
+      "outputs": [],
+      "payable": true,
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_rpCode",
+          "type": "bytes32"
+        },
+        {
+          "name": "_rpClaimer",
+          "type": "address"
+        },
+        {
+          "name": "_referenceCode",
+          "type": "address"
+        }
+      ],
+      "name": "ClaimRP",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_rpCode",
+          "type": "bytes32"
+        }
+      ],
+      "name": "FinishRP",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+]
